@@ -1,8 +1,10 @@
 .content
+  padding: 0 15px
   &__wrapper
     display: grid
+    justify-content: center
     grid-template-columns: repeat(3, minmax(100px, 462px))
-    grid-template-rows: 360px 360px minmax(100px, 580px)
+    grid-template-rows: 360px 360px minmax(250px, 580px)
     grid-gap: 55px
   
   &__link
@@ -47,6 +49,7 @@
       span
         font-size: 60px
         letter-spacing: 24px
+        line-height: 70px
     
     &:nth-child(2)
       background: url('../img/content/items/item-2.jpg') center (center/cover) no-repeat #1a1a1a
