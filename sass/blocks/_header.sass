@@ -95,12 +95,19 @@
     margin: 0 auto
     cursor: pointer
     transition: 0.5s all
-    &:hover, &:active, &:focus
-      transform: translateY(15px)
+    animation-name: animateArrow
+    animation-duration: 1s
+    animation-iteration-count: infinite
   &__arrow
     width: 100%
 
-
+@keyframes animateArrow
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(25px)
+  100%
+    transform: translateY(0px)
     
 
 
