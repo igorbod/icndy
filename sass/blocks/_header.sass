@@ -1,0 +1,103 @@
+.header
+  min-height: 100vh
+  background: url('../img/main/main-bg.jpg') center (center/cover) no-repeat #787776
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #1a1a1a
+    opacity: 0.4
+    // background-color: rgba(0,0,0, 0.4)
+  *
+    z-index: 1
+  // * 
+  //   border: 1px solid yellow
+  
+  &__wrapper
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: minmax(90px, auto) 1fr
+    height: 100vh
+
+  &__top
+    display: grid
+    grid-template-columns: 224px 1fr
+    align-items: center
+    justify-items: end
+      
+  .logo
+    &__link
+      display: block
+    &__image
+      display: block
+      max-width: 100%
+
+  &__info
+    display: grid
+    align-self: center
+  
+  &__title
+    font-size: 60px
+    font-weight: 300
+    letter-spacing: 36px;
+    line-height: 70px;
+    text-transform: uppercase
+    text-align: center
+    align-self: end
+  
+  &__menu
+    .menu
+      &__list
+        list-style: none
+      &__item
+        display: inline-block
+        margin-right: 70px
+        &:last-child
+          margin-right: 0
+      &__link
+        color: #ffffff
+        font-size: 18px
+        font-weight: 600
+        line-height: 18px
+        text-transform: uppercase
+        letter-spacing: 7.88px
+        transition: 0.3s all
+        &:hover
+          color: #f84545
+          text-decoration: none        
+
+  &__link
+    display: block
+    color: #f84545
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 12px
+    line-height: 75px
+    text-transform: uppercase
+    text-align: center
+    transition: 0.5s letter-spacing  
+    &:hover
+      letter-spacing: 20px
+      color: #f84545
+      text-decoration: none
+  
+  &__button
+    display: block
+    text-align: center
+    width: 84px
+    height: 42px
+    margin: 0 auto
+    cursor: pointer
+    transition: 0.5s all
+    &:hover
+      transform: translateY(15px)
+  &__arrow
+    width: 100%
+
+
+    
+
+
