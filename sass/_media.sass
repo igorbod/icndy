@@ -1,0 +1,53 @@
+@media (max-width: 1280px)
+  .header
+    &__title
+      font-size: 50px
+      letter-spacing: 20px
+      line-height: 35px
+    
+    .menu
+      &__item
+        margin-right: 35px
+        line-height: 20px
+
+@media (max-width: 991px)
+  .header
+    .menu
+      &__item
+        margin-right: 15px
+        letter-spacing: 1px
+
+@media (max-width: 768px)
+  .header
+    &__top
+      grid-template-columns: auto
+      grid-column-gap: 0
+      justify-items: center
+      grid-row-gap: 40px
+
+@media (max-width: 576px)
+  .header
+    .logo
+      width: 60%
+    
+    .menu
+      &__list
+        text-align: center
+      &__item
+        font-size: 14px
+        line-height: 30px
+
+    &__title
+      font-size: 36px
+      letter-spacing: 1px
+      line-height: 10px
+    
+    &__link
+      font-size: 24px
+      letter-spacing: 5px
+      &:hover, &:active, &:focus
+        letter-spacing: 8px
+
+    &__button
+      width: 42px
+      height: 21px

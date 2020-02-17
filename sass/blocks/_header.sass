@@ -1,4 +1,5 @@
 .header
+  padding: 0 15px
   min-height: 100vh
   background: url('../img/main/main-bg.jpg') center (center/cover) no-repeat #787776
   &:before
@@ -27,6 +28,7 @@
     grid-template-columns: 224px 1fr
     align-items: center
     justify-items: end
+    grid-column-gap: 30px
       
   .logo
     &__link
@@ -52,20 +54,21 @@
     .menu
       &__list
         list-style: none
+        text-align: right
       &__item
         display: inline-block
         margin-right: 70px
+        line-height: 40px
+        font-size: 18px
+        font-weight: 600
+        text-transform: uppercase
+        letter-spacing: 7.88px
         &:last-child
           margin-right: 0
       &__link
         color: #ffffff
-        font-size: 18px
-        font-weight: 600
-        line-height: 18px
-        text-transform: uppercase
-        letter-spacing: 7.88px
         transition: 0.3s all
-        &:hover
+        &:hover, &:active, &:focus
           color: #f84545
           text-decoration: none        
 
@@ -79,7 +82,7 @@
     text-transform: uppercase
     text-align: center
     transition: 0.5s letter-spacing  
-    &:hover
+    &:hover, &:active, &:focus
       letter-spacing: 20px
       color: #f84545
       text-decoration: none
@@ -92,7 +95,7 @@
     margin: 0 auto
     cursor: pointer
     transition: 0.5s all
-    &:hover
+    &:hover, &:active, &:focus
       transform: translateY(15px)
   &__arrow
     width: 100%
