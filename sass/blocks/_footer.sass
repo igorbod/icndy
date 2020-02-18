@@ -1,0 +1,32 @@
+.footer
+  max-height: 100px
+  height: 100%
+  &__wrapper
+    display: grid
+    grid-template-columns: 1fr 150px
+    grid-column-gap: 20px
+  
+ 
+  .dark
+    ul
+      text-align-last: left
+      li
+        letter-spacing: 3px
+        a
+          color: #1a1a1a
+  
+  &__social
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  
+  .social
+    &__item
+      display: inline-block
+    &__svg
+      fill: #000000
+      transition: 0.5s all
+      max-height: 29px
+      max-width: 30px
+      &:hover
+        fill: #f84545
